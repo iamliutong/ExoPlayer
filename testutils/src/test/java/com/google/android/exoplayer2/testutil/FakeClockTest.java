@@ -41,7 +41,6 @@ public final class FakeClockTest {
   @Test
   public void currentTimeMillis_withoutBootTime() {
     FakeClock fakeClock = new FakeClock(/* initialTimeMs= */ 10);
-
     assertThat(fakeClock.currentTimeMillis()).isEqualTo(10);
   }
 
